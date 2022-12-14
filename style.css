@@ -1,0 +1,265 @@
+
+html{
+    scroll-behavior: smooth;
+    
+   
+}
+:root{
+    --background-color: rgb(7,12,26);
+    --border-color : rgb(255,255,255,0.1); 
+    
+}
+
+@font-face {
+    font-family: 'rr';
+    src: url(font/Revamped-X3q1a.ttf);
+    
+}
+@font-face {
+    font-family: 'GKA';
+    src: url(font/Amputa\ Bangiz.ttf);
+    
+}
+
+body{
+    /* background-color: var(--background-color,background-image); */
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+   /* background: #c31432;  
+    background: -webkit-linear-gradient(to bottom, #240b36, #c31432);  
+    background: linear-gradient(to bottom, #240b36, #c31432); */  
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+nav>.nav-sec{
+    padding: 3em 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid dimgray;
+    align-items: center;
+    justify-content: center;
+
+}
+#nav-logo-sec , #nav-page-sec{
+    flex-basis: calc(100%/3);
+}
+#nav-logo-sec{
+    justify-content: flex-start;
+}
+
+#nav-social-sec, #nav-contact-sec{
+    flex-grow: 1;
+}
+*{
+    box-sizing: border-box;
+}
+h1 , h2 , h3 , a, p , span{
+    
+    font-weight: 400;
+    color: white;
+}
+a{
+    text-decoration: none;
+
+}
+#nav-page-sec{
+    gap: 6rem;
+}
+#nav-social-sec{
+    gap: 3rem;
+}
+main {
+    flex-grow: 1;
+}
+
+main> article{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr; 
+    grid-template-rows: 2fr 1fr ;
+    
+    
+}
+main> article> .article-sec{
+    height: 100%;
+    
+}
+#bottom-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#title-sec , #nava-sec {
+    border-top: 1px solid white;
+   
+
+}
+#title-sec{
+    font-size:300%;
+    font-weight: 300;
+    font-family: 'rr';
+    justify-content: flex-start;
+    padding-left: 2%;
+
+}
+
+#nava-sec{
+    display: flex;
+    border-left: 1px solid dimgray;
+    padding: 4em;
+    justify-content: center;
+    gap: 7em;
+    
+    
+}
+
+   
+#image-sec {
+    border-bottom: 1px solid var(--border-color);
+    background-image: url("resources/1.jpg");
+    background-position: center;
+    background-size: 100%;
+
+}
+
+button{
+    background-color: transparent;
+    color: wheat;  
+    border: none;
+    size: 100%;
+    
+
+}
+
+
+#GKA{
+    font-family: 'GKA';
+    font-size: 200%;
+}
+
+/*Music Section*/
+#homebutton{
+   position: absolute;
+   left: 20px;
+   padding: 1em;
+   
+   
+   }
+#poster{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;
+    
+}
+
+#bgsong{
+filter: blur(8px);
+  -webkit-filter: blur(8px);
+height: 100vh;
+width: 100%;
+}
+
+#presong{
+    
+    position: absolute; 
+    margin-right: 700px;
+    margin-bottom: 115px;
+}
+#prevsong{
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+  border: 2px solid white;
+}
+#nexsongs{
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+  border: 2px solid white;
+}
+#nextsong{
+    
+    position: absolute; 
+    margin-left: 700px;
+    margin-bottom: 115px;
+}
+#songpic{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    
+}
+#timers{
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 410px;
+
+   
+    
+}
+#songtitle{
+    color: white;
+    margin-top: 15px;
+    
+}
+#seek {
+  width:400px;
+  color: white;
+}
+#volume{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  }
+.hov:hover{
+    background-color: grey;
+    border-radius: 50px;
+}
+#buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.Musicplayer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+ 
+}
+#players{
+       width: 25%;
+       display: flex;
+       flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+#seeker{
+    margin-top:20px;
+}
+audio{
+    color: black;
+}
+
+
+.text-gray-600{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}

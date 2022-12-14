@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>GKA</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        
+         <nav id="home">
+            <div id="nav-logo-sec" class="nav-sec">
+                <a href="#"><div id="GKA">gka</div></a>
+            </div>
+            <div id="nav-page-sec" class="nav-sec">
+                <a href="#">Home</a>
+                <a href="#players">About</a>
+            </div>
+            <div id="nav-social-sec" class="nav-sec">
+                <a href="https://www.facebook.com/GKAudichya/" ><img id="facebook" srcset="resources/fb.png" width="20" height="20"/></a>
+                <a href="https://soundcloud.com/govind-audichya" ><img id="soundcloud" srcset="resources/sc.png" width="20" height="20"/></a>
+                <a href="https://www.instagram.com/gkaxv_ix/" ><img id="instagram" srcset="resources/ig.png" width="20" height="20"/></a>
+            </div>
+            <div id="nav-contact-sec" class="nav-sec">
+                <a href="#">Contact</a>
+            </div>
+         </nav>
+         <main>
+            <article>
+                <div id="image-sec" class="article-sec"></div>
+                <div id="bottom-section">
+                <div id="title-sec" class="article-sec"><h3 id="titles">Light</h3></div>
+                <div id="nava-sec" class="article-sec">
+                    <button onclick="Pre()" id="b1"><img  srcset="resources/pre.png" width="50" height="50"/></button>
+                    <button onclick="Pos()" id="b2"><img  srcset="resources/next.png" width="50" height="50"/></button>
+                </div>
+                </div>
+            </article>
+            
+         </main>
+       
+         <section class = "Musicplayer">
+            <div id="homebutton"><a href="#home"><img  srcset="resources/home.png" width="50" height="50"/></a></div>
+            <div id="poster"><img src="resources/pink.jpg" id="bgsong"></div>  
+            <div id="players">
+                  <div id="presong"><button onclick="prev()"><img src="resources/Mann.jpg" height="200" width="200" id="prevsong"/></button></div>
+                  <div id="nextsong"><button onclick="next()"><img src="resources/Shakti.jpg" height="200" width="200"id="nexsongs"/></button></div>
+                   <div id="songpic">
+            
+                    <img src="resources/song.jpg" id="songpics" height="275" width="275"/>
+                  </div>
+                  
+                  <div id="songtitle">Grant - Constellation </div>
+                  <div id="seeker">
+                    <div id="timers"></div>
+                    <input type="range"  min="0" max="" id="seek" value="0" onclick="seek()">
+            
+                  </div>
+            
+                  <div id="buttons">
+                    <button class="hov" height="50%" name="pre" id="pre" onclick="prev()"><img src="resources/pre.png" height="50" width="50" /></button>
+                    <button class="hov" height="50%" name="play" id="play" onclick="plays()"><img id="playimg" src="resources/play.png" height="50" width="50"  /></button>
+                    <button class="hov" height="50%" name="next" id="next" onclick="next()"><img src="resources/next.png" height="50" width="50"/></button>
+                  </div>
+                  <div id="volume">
+                    <button class="hov" height="50%" name="next" id="mute" onclick="muted()" ><img src="resources/vol.png" height="50" width="50" id="vmuted" ></button>
+                    <input type="range" min="0" max="100" value="100" onclick="vol()" onmousedown="vol()" id="volo">
+                  </div>
+                
+            </div>
+            </section>
+    </body>
+</html>
